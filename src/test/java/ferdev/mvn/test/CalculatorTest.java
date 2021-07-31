@@ -1,13 +1,14 @@
 package ferdev.mvn.test;
 
+import ferdev.mvn.test.generator.GeneratorAplikasi;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DisplayNameGeneration;
 
+@DisplayNameGeneration(GeneratorAplikasi.class)
 // @DisplayName("Calculator Kelas")
-
 public class CalculatorTest {
     private Calculator calculator = new Calculator();
 

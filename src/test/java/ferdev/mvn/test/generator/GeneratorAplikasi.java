@@ -8,7 +8,7 @@ public class GeneratorAplikasi implements DisplayNameGenerator {
 
     @Override
     public String generateDisplayNameForClass(Class<?> aClass) {
-        return "Test Dari " + aClass.getSimpleName() + " " + aClass.getName();
+        return "Test Dari " + aClass.getSimpleName();
     }
 
     @Override
