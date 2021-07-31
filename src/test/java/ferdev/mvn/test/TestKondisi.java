@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;
 
+import java.util.Properties;
+
 public class TestKondisi {
 
     @Test
@@ -33,5 +35,18 @@ public class TestKondisi {
     @Test
     @DisabledForJreRange(min = JRE.JAVA_8, max = JRE.JAVA_16)
     public void testDisableOnJreRange8to16(){} // disable jre range 8-16
+
+    // system property
+    @Test
+    @EnabledIfSystemProperties({
+            @EnabledIfSystemProperty(named = "os.name", matches = "Linux")
+    })
+    public void enabledOnPoperty(){}
+
+    @Test
+    @DisabledIfSystemProperties({
+            @DisabledIfSystemProperty(named = "os.name", matches = "Linux")
+    })
+    public void DisabledOnPoperty(){}
 
 }
