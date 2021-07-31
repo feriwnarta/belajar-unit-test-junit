@@ -1,13 +1,14 @@
 package ferdev.mvn.test;
 
 import ferdev.mvn.test.generator.GeneratorAplikasi;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DisplayNameGeneration;
 
-@DisplayNameGeneration(GeneratorAplikasi.class)
+//@DisplayNameGeneration(GeneratorAplikasi.class)
 // @DisplayName("Calculator Kelas")
 public class CalculatorTest {
     private Calculator calculator = new Calculator();
@@ -29,6 +30,8 @@ public class CalculatorTest {
     }
 
     // memcoba unit test untuk digunakan disable
+    // jika ingin disabled / menonaktifkan test dapat menggunakan anotation disabled
+    @Disabled
     @Test
     public void testForDisabled(){
         System.out.println("Method ini akan disabled");
