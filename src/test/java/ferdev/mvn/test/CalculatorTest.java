@@ -1,17 +1,29 @@
 package ferdev.mvn.test;
 
 import ferdev.mvn.test.generator.GeneratorAplikasi;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.DisplayNameGeneration;
+import static org.junit.jupiter.api.Assertions.*;
 
 //@DisplayNameGeneration(GeneratorAplikasi.class)
 // @DisplayName("Calculator Kelas")
 public class CalculatorTest {
     private Calculator calculator = new Calculator();
+
+    // beforEach afterEach untuk permethod
+    @BeforeEach
+    public void sebelum(){
+        System.out.println("=================");
+        System.out.println("Sebelum PerMethod");
+        System.out.println("=================");
+    }
+
+    @AfterEach
+    public void sesudah(){
+        System.out.println("=================");
+        System.out.println("Sesudah Per Method");
+        System.out.println("=================");
+    }
 
     @Test
    // @DisplayName("Test tambah ini harus berhasil")
