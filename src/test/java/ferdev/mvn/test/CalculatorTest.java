@@ -12,17 +12,31 @@ public class CalculatorTest {
 
     // beforEach afterEach untuk permethod
     @BeforeEach
-    public void sebelum(){
+    public void sebelumPerMethod(){
         System.out.println("=================");
         System.out.println("Sebelum PerMethod");
         System.out.println("=================\n");
     }
 
     @AfterEach
-    public void sesudah(){
+    public void sesudahPerMethod(){
         System.out.println("\n=================");
         System.out.println("Sesudah Per Method");
         System.out.println("=================\n");
+    }
+
+    @BeforeAll // before all digunakan untuk menjalankannya sebelum semuaMethod
+    public static void sebelumUntukSemuaMethod(){ // harus static
+        System.out.println("********************");
+        System.out.println("SEBELUM SEMUA METHOD");
+        System.out.println("********************");
+    }
+
+    @AfterAll // after all digunakan untuk menjalankannya sebelum semuaMethod
+    public static void sesudahUntukSemuaMethod(){ // harus static
+        System.out.println("********************");
+        System.out.println("SESUDAH SEMUA METHOD");
+        System.out.println("********************");
     }
 
     @Test
