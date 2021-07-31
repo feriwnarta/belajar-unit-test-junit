@@ -27,5 +27,11 @@ public class CalculatorTest {
             calculator.bagi(10,0);
         });
     }
+
+    // memcoba unit test untuk digunakan disable
+    @Test
+    public void testForDisabled(){
+        System.out.println("Method ini akan disabled");
+    }
     
 }
