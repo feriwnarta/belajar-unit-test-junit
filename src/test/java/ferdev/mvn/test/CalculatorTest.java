@@ -15,14 +15,14 @@ public class CalculatorTest {
     public void sebelum(){
         System.out.println("=================");
         System.out.println("Sebelum PerMethod");
-        System.out.println("=================");
+        System.out.println("=================\n");
     }
 
     @AfterEach
     public void sesudah(){
-        System.out.println("=================");
+        System.out.println("\n=================");
         System.out.println("Sesudah Per Method");
-        System.out.println("=================");
+        System.out.println("=================\n");
     }
 
     @Test
@@ -39,6 +39,11 @@ public class CalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> {
             calculator.bagi(10,0);
         });
+    }
+
+    @Test
+    public void methodNormal(){
+        System.out.println("NORMAL TEST");
     }
 
     // memcoba unit test untuk digunakan disable
