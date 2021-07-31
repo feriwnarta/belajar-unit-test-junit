@@ -1,0 +1,11 @@
+Belajar unit test menggunakan framework dari junit
+
+1. membuat unit test baru dengan menggunakan anotation test *
+2. menggunakan method assertion *
+3. menggunakan method assertion (throws) dengan keinginan hasil dari unit test haru menghasilkan exception *
+4. menggunakan display name, untuk mengganti deskripsi file didalam hasil console junit
+5. menggunakan display name generator
+6. menggunakan assumption, jika keinginan tidak tercapai makan akan melempar error
+7. menggunakan before after
+
+

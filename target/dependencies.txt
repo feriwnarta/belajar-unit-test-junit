@@ -1,0 +1,15 @@
+digraph "ferdev:belajar-mvn-unit-test:jar:1.0-SNAPSHOT" { 
+	"ferdev:belajar-mvn-unit-test:jar:1.0-SNAPSHOT" -> "org.junit.jupiter:junit-jupiter:jar:5.8.0-M1:test" ; 
+	"org.junit.jupiter:junit-jupiter:jar:5.8.0-M1:test" -> "org.junit.jupiter:junit-jupiter-api:jar:5.8.0-M1:test" ; 
+	"org.junit.jupiter:junit-jupiter:jar:5.8.0-M1:test" -> "org.junit.jupiter:junit-jupiter-params:jar:5.8.0-M1:test" ; 
+	"org.junit.jupiter:junit-jupiter:jar:5.8.0-M1:test" -> "org.junit.jupiter:junit-jupiter-engine:jar:5.8.0-M1:test" ; 
+	"org.junit.jupiter:junit-jupiter-api:jar:5.8.0-M1:test" -> "org.apiguardian:apiguardian-api:jar:1.1.1:test" ; 
+	"org.junit.jupiter:junit-jupiter-api:jar:5.8.0-M1:test" -> "org.opentest4j:opentest4j:jar:1.2.0:test" ; 
+	"org.junit.jupiter:junit-jupiter-api:jar:5.8.0-M1:test" -> "org.junit.platform:junit-platform-commons:jar:1.8.0-M1:test" ; 
+	"org.junit.jupiter:junit-jupiter-engine:jar:5.8.0-M1:test" -> "org.junit.platform:junit-platform-engine:jar:1.8.0-M1:test" ; 
+	"org.junit.jupiter:junit-jupiter-engine:jar:5.8.0-M1:test" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.4.20:test" ; 
+	"org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.4.20:test" -> "org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.20:test" ; 
+	"org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.4.20:test" -> "org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:1.4.20:test" ; 
+	"org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.20:test" -> "org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.4.20:test" ; 
+	"org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.20:test" -> "org.jetbrains:annotations:jar:13.0:test" ; 
+ } 
