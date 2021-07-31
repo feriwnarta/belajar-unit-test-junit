@@ -2,8 +2,10 @@ package ferdev.mvn.test;
 
 import ferdev.mvn.test.generator.GeneratorAplikasi;
 import org.junit.jupiter.api.*;
+import org.opentest4j.TestAbortedException;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
 
 //@DisplayNameGeneration(GeneratorAplikasi.class)
 // @DisplayName("Calculator Kelas")
@@ -67,5 +69,29 @@ public class CalculatorTest {
     public void testForDisabled(){
         System.out.println("Method ini akan disabled");
     }
+
+    @Test
+    public void testAborted(){ // tes aborted exception jika ingin kondisi tertentu method test di gagalkan
+                               // Jika tes aborted yg terjadi, test result akan ignored, jika exception lain akan tes failed
+        String profile = System.getenv("PROFILE");
+        if(!"DEV".equals(profile)){
+            throw new TestAbortedException("PROFILE DEV TIDAK ADA");
+        }
+
+        // isi test
+    }
+
+    @Test
+    public void tesAsumption(){ // akan menggunakan assumption, dimana jika gagal akan melempar test aborted exception,
+                                // tidak perlu manual bikin sendiri, cocok untuk test yang perlu cek kondisi terlebih dahulu baru dijalankan
+
+        assumeTrue("DEV".equals(System.getenv("PROFILE"))); // pengecekan jika, system environment profile berisi true
+                                                                  // kodisi harus true
+
+        // assumeTrue("DEVELOPER".equals(System.getenv("PROFILE"))); // jika assume gaga, value env bukan developer
+        // Lanjutan Tes
+    }
+
+
     
 }
