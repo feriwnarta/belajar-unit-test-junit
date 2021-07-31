@@ -49,4 +49,16 @@ public class TestKondisi {
     })
     public void DisabledOnPoperty(){}
 
+    // sistem environment variabel with antotation
+    @Test
+    @EnabledIfEnvironmentVariable(named = "PROFILE", matches = "DEV")
+    public void enableSystemEnvironment(){}
+
+    @Test
+    @EnabledIfEnvironmentVariables(
+            @EnabledIfEnvironmentVariable(named = "PROFILE", matches = "DEV")
+    )
+    public void DisabledSystemEnvironmet(){}
+
+
 }
