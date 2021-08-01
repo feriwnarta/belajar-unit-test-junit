@@ -11,6 +11,8 @@ Belajar unit test menggunakan framework dari junit
 9. menggunakan testAbortedException, tes khusus junit untuk menghentikan unit test jika terjadi exception
 10. menggunakan tes kondisi lingkup system (properti, variable ,environment, dll) dengan anotation yg sudah ada
 11. menggunakan tag dan tags untuk memberi tanda unit test
+    !! metod antar unit test indenpenden tidak hidup diobjek yang sama, setiap method unit test dijalankan
+    !! setiap method akan menggunakan objek baru
 12. menentukan urutan / alur jalan junit
 13.
 14.
