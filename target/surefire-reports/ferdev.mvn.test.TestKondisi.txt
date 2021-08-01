@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ferdev.mvn.test.TestKondisi
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.006 s - in ferdev.mvn.test.TestKondisi

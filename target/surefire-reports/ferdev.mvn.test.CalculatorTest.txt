@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ferdev.mvn.test.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.073 s - in ferdev.mvn.test.CalculatorTest
