@@ -13,7 +13,7 @@ Belajar unit test menggunakan framework dari junit
 11. menggunakan tag dan tags untuk memberi tanda unit test
     !! metod antar unit test indenpenden tidak hidup diobjek yang sama, setiap method unit test dijalankan
     !! setiap method akan menggunakan objek baru
-12. menentukan urutan / alur jalan junit
+12. menentukan urutan / alur eksekusi junit, menggunakan @TestMethodOrder
 13.
 14.
 15.
