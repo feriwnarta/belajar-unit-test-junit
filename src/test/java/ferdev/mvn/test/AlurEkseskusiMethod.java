@@ -1,2 +1,4 @@
-package ferdev.mvn.test;public class AlurEkseskusiMethod {
+package ferdev.mvn.test;
+
+public class AlurEkseskusiMethod {
 }
