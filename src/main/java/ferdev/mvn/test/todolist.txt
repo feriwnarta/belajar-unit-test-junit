@@ -6,6 +6,16 @@ Belajar unit test menggunakan framework dari junit
 4. menggunakan display name, untuk mengganti deskripsi file didalam hasil console junit
 5. menggunakan display name generator
 6. menggunakan assumption, jika keinginan tidak tercapai makan akan melempar error
-7. menggunakan before after
+7. menggunakan beforeeach, aftereach
+8. menggunakan disable
+9. menggunakan testAbortedException, tes khusus junit untuk menghentikan unit test jika terjadi exception
+10. menggunakan tes kondisi lingkup system (properti, variable ,environment, dll) dengan anotation yg sudah ada
+11. menggunakan tag dan tags untuk memberi tanda unit test
+12. menentukan urutan / alur jalan junit
+13.
+14.
+15.
+16.
+17
 
 
