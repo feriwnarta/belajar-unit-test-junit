@@ -2,7 +2,6 @@ package ferdev.mvn.test;
 
 
 public class Calculator {
-
     public double tambah(int v1, int v2){
         return v1 + v2;
     }
