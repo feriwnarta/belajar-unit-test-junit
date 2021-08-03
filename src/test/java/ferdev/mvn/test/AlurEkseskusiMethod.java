@@ -9,7 +9,18 @@ import org.junit.jupiter.api.*;
                                                 // dan dapat menggunakan 1 objek untuk seluruh method unit test
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AlurEkseskusiMethod {
-    private int counter;
+    private int counter; // variabel akan terus hidup di 1 objek
+
+    @BeforeAll // dengan menggunakan test istance per class, before all dan after all dapat tidak menggunakan method static
+    public void beforeAll(){
+        System.out.println("Before tanpa static");
+    }
+
+
+    @AfterAll
+    public void afterAll(){
+        System.out.println("After tanpa static");
+    }
 
     @Order(1)
     @Test
